@@ -51,7 +51,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='premise',
             name='premise_type',
-            field=models.IntegerField(default=1, help_text='\n\nThe type of premise. It can be: <ul> <li> but: An objection against the contention. </li> <li> because: A reason for proof the contention. </li> <li> however: An additional situation for the premise. </li> </ul>', verbose_name='Premise Type', choices=[(0, b'but'), (1, b'because'), (2, b'however')]),
+            field=models.IntegerField(default=1, help_text='\n\nThe type of premise. It can be: <ul> <li> but: An objection to the contention. </li> <li> because: A reason or evidence supporting the contention. </li> <li> however: A different context or situation that might indicate limitations in, or alternative perspectives on, the contention. </li> </ul>', verbose_name='Premise Type', choices=[(0, b'but'), (1, b'because'), (2, b'however')]),
         ),
         migrations.AlterField(
             model_name='premise',
